@@ -14,7 +14,7 @@ public class Main {
     }
     public static void main(String[] args) {
         Product p = new Product();
-        int result1 = p.product(5, 3);
+        int result1 = p.product(5, 4);
         System.out.println("Product result 2 parameters: " + result1);
 
         int result2 = p.product(2,4,5);
