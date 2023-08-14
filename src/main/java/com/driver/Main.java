@@ -1,26 +1,37 @@
 package com.driver;
 
 public class Main {
-    static class Product{
-        public int product(int x, int y){
-            return x*y;
-        }
-        public int product(int x, int y, int z){
-            return x*y*z;
-        }
-        public double product(double x, double y){
-            return x*y;
-        }
-    }
     public static void main(String[] args) {
+        // Task 2: Creating an object of the Product class
         Product p = new Product();
-        int result1 = p.product(5, 4);
-        System.out.println("Product result 2 parameters: " + result1);
 
-        int result2 = p.product(2,4,5);
-        System.out.println("Product result 3 parameters: " + result2);
+        // Task 3: Calling the method with two int parameters
+        int result1 = p.product(2, 3);
+        System.out.println("Product of 2 and 3 is: " + result1);
 
-        double result3 = p.product(2.5, 3.5);
-        System.out.println("Product result(double): " + result3);
+        // Task 4: Calling the method with three int parameters
+        int result2 = p.product(2, 3, 4);
+        System.out.println("Product of 2, 3, and 4 is: " + result2);
+
+        // Task 5: Calling the method with two double parameters
+        double result3 = p.product(2.5, 3.0);
+        System.out.println("Product of 2.5 and 3.0 is: " + result3);
     }
+}
+
+class Product {
+    // Task 3: Method with two int parameters
+    public int product(int x, int y) {
+        return x * y;
     }
+
+    // Task 4: Overloaded method with three int parameters
+    public int product(int x, int y, int z) {
+        return x * y * z;
+    }
+
+    // Task 5: Overloaded method with two double parameters
+    public double product(double x, double y) {
+        return x * y;
+    }
+}
