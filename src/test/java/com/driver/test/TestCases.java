@@ -1,4 +1,4 @@
-package com.driver.test;
+package com.driver.testcases;
 
 import static org.junit.Assert.*;
 import org.junit.jupiter.api.Test;
