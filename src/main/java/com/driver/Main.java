@@ -4,31 +4,24 @@ public class Main {
 
         Product p = new Product();
 
+        System.out.println(p.product(2,3));
 
-        int result1 = p.product(2,3);
+        System.out.println(p.product(2, 3, 4));
 
-
-
-        int result2 = p.product(2, 3, 4);
-
-
-
-        double result3 = p.product(2.5, 3.0);
+        System.out.println(p.product(2.5, 3.0));
 
     }
 }
-
  class Product {
     // Task 3: Method with two int parameters
     public int product(int x, int y) {
         return x*y;
     }
 
-
-    public int product(int x, int y, int z) {
+    public int product(int x, int y, int z)
+    {
         return x * y * z;
     }
-
 
     public double product(double x, double y) {
         return x * y;
